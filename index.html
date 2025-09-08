@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+       <a-dodecahedron color="red" radius="5" position="0 0 -15"></a-dodecahedron>
+   <a-plane position="0 -7 -10" rotation="-90 0 0" width="40" height="20" color="gray"></a-plane>
+
+        <a-sky color="lightblue"></a-sky>
+       
+       <a-torus rotation="0 0 0" color="blue" arc="360" radius="7" radius-tubular="0.1" position="0 0 -15"
+          animation="
+          property:rotation;
+          from:0 0 0;
+          to:0 360 0;
+          loop:true;
+          " 
+           ></a-torus>
+      
+        </a-scene>
+    </body>
+</html>
